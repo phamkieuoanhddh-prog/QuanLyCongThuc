@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_congthuc"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="OnClick_XemChiTiet">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/ImageView_AnhCongThuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/mauNenInput"
+            android:contentDescription="Ảnh công thức" />
+
+        <ImageView
+            android:id="@+id/ImageView_YeuThich"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:background="@drawable/bg_nut_chinh_dam"
+            android:src="@android:drawable/btn_star_big_off"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="OnClick_ToggleYeuThich"
+            android:contentDescription="Yêu thích" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/TextView_TenCongThuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên công thức"
+            android:textSize="16sp"
+            android:textColor="@color/mauChuDen"
+            android:fontFamily="@font/raleway_bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/TextView_DoKho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dễ"
+            android:textSize="12sp"
+            android:textColor="@color/mauTrang"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/bg_badge_dokho"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

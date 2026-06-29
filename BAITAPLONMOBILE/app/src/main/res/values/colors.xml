@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mauNenSang">#E0D7C1</color>
+    <color name="mauNenNhat">#E2DCD2</color>
+    <color name="mauXanhDam">#414A8E</color>
+    <color name="mauTimNhat">#A29CB6</color>
+    <color name="mauNenInput">#F5F1E8</color>
+    <color name="mauVienInput">#D4C9AE</color>
+    <color name="mauNenInputDam">#5560A0</color>
+    <color name="mauVienInputDam">#6B74B0</color>
+    <color name="mauNutChinh">#414A8E</color>
+    <color name="mauNutChinhDam">#E0D7C1</color>
+    <color name="mauChuDen">#2C2A3A</color>
+    <color name="mauChuXanh">#6B6F9E</color>
+    <color name="mauChuNhat">#A9A6B8</color>
+    <color name="mauTrang">#FFFFFF</color>
+    <color name="mauChuTrenNenDam">#FFFFFF</color>
+    <color name="mauChuPhuTrenNenDam">#C7CBE8</color>
+    <color name="mauHintTrenNenDam">#9CA3D6</color>
+    <color name="mauDoKhoDe">#A9C9A4</color>
+    <color name="mauDoKhoTB">#A29CB6</color>
+    <color name="mauDoKhoKho">#414A8E</color>
+    <color name="mauTraiTim">#C75C5C</color>
+    <color name="mauNenCard">#FFFFFF</color>
+    <color name="mauBongDo">#1A1A1A</color>
+
+</resources>

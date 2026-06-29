@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauNenSang">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@color/mauNenSang"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Công Thức Của Tôi"
+                android:textSize="24sp"
+                android:textColor="@color/mauXanhDam"
+                android:fontFamily="@font/raleway_bold" />
+
+            <ImageView
+                android:id="@+id/ImageView_DangXuat"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@android:drawable/ic_lock_power_off"
+                app:tint="@color/mauXanhDam"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="OnClick_DangXuat"
+                android:contentDescription="Đăng xuất" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khám phá ngàn công thức, nấu trọn yêu thương."
+            android:textSize="13sp"
+            android:textColor="@color/mauChuXanh"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_thanh_timkiem"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="@color/mauChuNhat"
+                android:contentDescription="Tìm kiếm" />
+
+            <EditText
+                android:id="@+id/EditText_TimKiem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="Tìm công thức..."
+                android:textColorHint="@color/mauChuNhat"
+                android:textColor="@color/mauChuDen"
+                android:textSize="14sp"
+                android:fontFamily="@font/raleway_thin"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_BoLocYeuThich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout_TopBar"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="10dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/TextView_XemYeuThich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="❤ Xem yêu thích"
+            android:textSize="13sp"
+            android:textColor="@color/mauTraiTim"
+            android:fontFamily="@font/raleway_bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="OnClick_XemYeuThich" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/GridView_DanhSachCongThuc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LinearLayout_BoLocYeuThich"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="4dp"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="90dp"
+        android:clipToPadding="false"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:id="@+id/TextView_RongDanhSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Bạn chưa có công thức nào.\nNhấn + để thêm công thức đầu tiên!"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/mauChuNhat"
+        android:fontFamily="@font/raleway_thin"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ImageView_ThemCongThuc"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_nut_chinh"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/mauTrang"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="OnClick_ThemCongThuc"
+        android:contentDescription="Thêm công thức" />
+
+</RelativeLayout>

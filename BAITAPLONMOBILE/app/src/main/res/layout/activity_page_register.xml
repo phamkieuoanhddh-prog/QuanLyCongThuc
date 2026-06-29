@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXanhDam"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ"
+            android:textSize="32sp"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khám phá ngàn công thức, nấu trọn yêu thương."
+            android:textSize="14sp"
+            android:textColor="@color/mauChuPhuTrenNenDam"
+            android:fontFamily="@font/raleway_thin"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_Email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_field_dam"
+            android:paddingHorizontal="20dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_thin"
+            android:hint="exemple@gmail.com"
+            android:textColorHint="@color/mauHintTrenNenDam"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_Password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_field_dam"
+            android:paddingHorizontal="20dp"
+            android:inputType="textPassword"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận mật khẩu"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_ConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_field_dam"
+            android:paddingHorizontal="20dp"
+            android:inputType="textPassword"
+            android:textColor="@color/mauChuTrenNenDam"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/Button_Register"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="ĐĂNG KÝ"
+            android:textSize="17sp"
+            android:textColor="@color/mauXanhDam"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/bg_nut_chinh_dam"
+            android:layout_marginBottom="20dp"
+            android:stateListAnimator="@null"
+            android:onClick="OnClick_NutRegister" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã có tài khoản? "
+                android:textSize="14sp"
+                android:textColor="@color/mauChuPhuTrenNenDam"
+                android:fontFamily="@font/raleway_thin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG NHẬP"
+                android:textSize="14sp"
+                android:textColor="@color/mauChuTrenNenDam"
+                android:fontFamily="@font/raleway_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="OnClick_ChuyenLogin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

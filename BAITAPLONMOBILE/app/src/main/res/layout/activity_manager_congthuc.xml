@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauNenSang"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✕"
+                android:textSize="20sp"
+                android:textColor="@color/mauXanhDam"
+                android:fontFamily="@font/raleway_bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="OnClick_QuayLai" />
+
+            <TextView
+                android:id="@+id/TextView_TieuDeForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:text="Thêm Công Thức"
+                android:textSize="22sp"
+                android:textColor="@color/mauXanhDam"
+                android:fontFamily="@font/raleway_bold" />
+
+            <Button
+                android:id="@+id/Button_XoaCongThuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:textSize="14sp"
+                android:textColor="@color/mauTrang"
+                android:fontFamily="@font/raleway_bold"
+                android:background="@drawable/bg_nut_chinh"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:stateListAnimator="@null"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="OnClick_XoaCongThuc" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_input_field"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="OnClick_ChonAnh">
+
+            <ImageView
+                android:id="@+id/ImageView_AnhCongThuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hinhnen1"
+                android:contentDescription="Ảnh công thức" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên công thức"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuDen"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_TenCongThuc"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="@color/mauChuNhat"
+            android:textColor="@color/mauChuDen"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Độ khó"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuDen"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup_DoKho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/RadioButton_De"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:text="Dễ"
+                android:textColor="@color/mauChuDen"
+                android:fontFamily="@font/raleway_thin"
+                android:checked="true"
+                android:buttonTint="@color/mauXanhDam" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_TrungBinh"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Trung bình"
+                android:textColor="@color/mauChuDen"
+                android:fontFamily="@font/raleway_thin"
+                android:buttonTint="@color/mauXanhDam" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_Kho"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Khó"
+                android:textColor="@color/mauChuDen"
+                android:fontFamily="@font/raleway_thin"
+                android:buttonTint="@color/mauXanhDam" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyên liệu"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuDen"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_NguyenLieu"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="16dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/mauChuNhat"
+            android:textColor="@color/mauChuDen"
+            android:textSize="14sp"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cách làm"
+            android:textSize="15sp"
+            android:textColor="@color/mauChuDen"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/EditText_CachLam"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_input_field"
+            android:padding="16dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/mauChuNhat"
+            android:textColor="@color/mauChuDen"
+            android:textSize="14sp"
+            android:fontFamily="@font/raleway_thin"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/Button_LuuCongThuc"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LƯU CÔNG THỨC"
+            android:textSize="17sp"
+            android:textColor="@color/mauTrang"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/bg_nut_chinh"
+            android:stateListAnimator="@null"
+            android:onClick="OnClick_LuuCongThuc" />
+
+    </LinearLayout>
+
+</ScrollView>

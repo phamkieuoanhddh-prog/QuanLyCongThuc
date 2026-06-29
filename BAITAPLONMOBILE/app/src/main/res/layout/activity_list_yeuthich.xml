@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauNenSang">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_TopBarYeuThich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/mauNenSang"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ImageView_QuayLaiYeuThich"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/mauXanhDam"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="OnClick_QuayLaiYeuThich"
+            android:contentDescription="Quay lại" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:text="Công Thức Yêu Thích"
+            android:textSize="22sp"
+            android:textColor="@color/mauXanhDam"
+            android:fontFamily="@font/raleway_bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_ThanhTimKiemYeuThich"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/LinearLayout_TopBarYeuThich"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_thanh_timkiem"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="@color/mauChuNhat"
+            android:contentDescription="Tìm kiếm" />
+
+        <EditText
+            android:id="@+id/EditText_TimKiemYeuThich"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:hint="Tìm công thức..."
+            android:textColorHint="@color/mauChuNhat"
+            android:textColor="@color/mauChuDen"
+            android:textSize="14sp"
+            android:fontFamily="@font/raleway_thin"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView_DanhSachYeuThich"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LinearLayout_ThanhTimKiemYeuThich"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="20dp"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <TextView
+        android:id="@+id/TextView_RongYeuThich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Bạn chưa có công thức yêu thích nào.&#10;Nhấn ❤ ở công thức bất kỳ để lưu vào đây!"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/mauChuNhat"
+        android:fontFamily="@font/raleway_thin"
+        android:visibility="gone" />
+
+</RelativeLayout>
